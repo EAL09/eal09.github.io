@@ -1,0 +1,50 @@
+/* Parts of these are collected from
+https://meyerweb.com/eric/tools/css/reset/
+https://www.joshwcomeau.com/css/custom-css-reset/
+https://piccalil.li/blog/a-more-modern-css-reset/
+and our lord and saviour: Kevin Powell*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	/*max-width: 100%;*/
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: "";
+	content: none;
+}
