@@ -1,0 +1,118 @@
+/* Fonts */
+/*@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
+this doesn't work for some reason
+*/
+
+/* Variables */
+:root {
+	--font-normal: "Atkinson Hyperlegible Next";
+	--font-important: "Lexend";
+
+	--clr-white: #ffffff;
+	--clr-gray: #656565;
+	--clr-black: #000000;
+	--clr-tertiary: #382c40;
+	--clr-primary: #f7f2ff;
+	--clr-primary-2: #ebe4f7;
+	--clr-primary-3: #efe6ff;
+	--clr-secondary: #fbe7ff;
+	--clr-tertiary: #382c40;
+	--clr-tertiary-2: #68357e;
+
+	--lr-padding: clamp(1rem, 3%, 1000px);
+}
+body {
+	background-color: var(--clr-primary);
+}
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: var(--clr-primary-2);
+	height: fit-content;
+	font: 1rem var(--font-important);
+	padding: 1.5rem var(--lr-padding) 1.5rem var(--lr-padding);
+}
+nav .logo {
+	font-size: 1.125rem;
+	flex-grow: 7;
+	font-weight: 900;
+	color: var(--clr-tertiary-2);
+}
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+/*nav ul > li {
+	margin: 0 0.5rem 0 0.5rem;
+}
+nav ul > li:first-child {
+	margin: 0 0.5rem 0 0;
+}
+nav ul > li:last-child {
+	margin: 0 0 0 0.5rem;
+} some really whack way of spacing out divs the nav links*/
+
+/*Footer still has a lot of issues. need to fix*/
+
+footer {
+	background-color: var(--clr-primary-3);
+	padding: var(--lr-padding);
+	height: 20%;
+}
+footer .tab {
+	background: var(--clr-white);
+	height: fit-content;
+	padding: var(--lr-padding);
+	display: flex;
+	align-items: center;
+	align-content: stretch;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+footer .footer-title {
+	font: 900 1.25rem var(--font-important);
+	text-transform: uppercase;
+}
+
+footer .left {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+}
+footer .left .tagline {
+	font: 400 1.25rem var(--font-important);
+	margin-bottom: 1rem;
+}
+footer .left .copyright {
+	font: 400 0.8rem var(--font-important);
+	color: var(--clr-gray);
+	line-height: 0.8rem;
+	margin-top: auto;
+}
+
+footer .right {
+	text-align: right;
+	flex-grow: 1;
+	align-self: flex-start;
+}
+footer .right .footer-title {
+	margin-bottom: 0.375rem;
+}
+footer .right ul > li {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	font: 400 1rem var(--font-important);
+	color: var(--clr-gray);
+}
+footer .right ul > li > img {
+	display: inline;
+	height: 1.2rem;
+	margin-left: 0.375rem;
+}
