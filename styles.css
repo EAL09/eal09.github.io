@@ -48,6 +48,45 @@ nav ul {
 	flex-grow: 1;
 }
 
+/*
+*** Header ***
+*/
+
+header {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+	justify-items: center;
+	padding: calc(1.25 * var(--lr-padding));
+	font: 400 1rem/1.25 var(--font-normal);
+}
+header .profile .profile-cap {
+	/*display: grid;*/
+	/*place-content: center;*/ /* Possibly redundant. Was used to center image.*/
+	height: 16ch;
+	width: 16ch;
+	border-radius: 100%;
+	overflow: hidden;
+	margin-bottom: 1.25rem;
+}
+header .profile .profile-cap img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+header .profile .title {
+	font: 900 2rem var(--font-important);
+	color: var(--clr-tertiary);
+	text-align: center;
+}
+header .intro {
+	text-align: justify;
+	max-width: 45ch;
+}
+/*
+*** Footer  ***
+*/
+
 /*nav ul > li {
 	margin: 0 0.5rem 0 0.5rem;
 }
